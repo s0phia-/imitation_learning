@@ -23,7 +23,7 @@ My last significant model choice was to remove 25% of state action pairs where n
 
 ![car_demo](https://user-images.githubusercontent.com/9541955/111087782-c75c5a00-8523-11eb-9b8f-030bf9cb9728.gif)
 
-Above is a gif of my trained agent moving in a completely straight line. This sub-optimal behaviour could be due to a few reasons - insufficient training time, insufficient or poor quality expert data, or a mistake in the model I’ve not noticed. I think the most likely explanation is that there are very few data where the “expert” turns left or right. This could be addressed by augmenting turning training examples or collecting more data.
+Above is a gif of my trained agent moving in a completely straight line. This sub-optimal behaviour could be due to a few reasons - insufficient training time, insufficient or poor quality expert data, or a mistake in the model I’ve not noticed. I think the most likely explanation is that there are very few data where the “expert” turns left or right. This could be addressed by augmenting turning training examples or collecting more data. Also, turning the image to greyscale may have made the state action pairs harder to learn. A future improvement could be to include colour channels.
 
 Loss of the trained model over 10 epochs:
 
